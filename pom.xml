@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.namnd</groupId>
+	<artifactId>ms-base-module</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ms-base-module</name>
+	<packaging>pom</packaging>
+	<description>ms-base-module</description>
+	<properties>
+		<maven.version>3.9.1</maven.version>
+		<java.version>11</java.version>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<!-- Plugin versions -->
+		<maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
+		<maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
+		<checkstyle.version>9.3</checkstyle.version>
+		<nohttp-checkstyle.version>0.0.10</nohttp-checkstyle.version>
+	</properties>
+	<dependencies>
+	</dependencies>
+
+	<modules>
+		<module>api-client/ms-api-client-utils</module>
+		<module>api-client/api-client-authen</module>
+		<module>core-base</module>
+
+		<!--        <module>gateway-service</module>-->
+		<!--        <module>ms-uaa</module>-->
+		<!--        <module>ms-websocket</module>-->
+		<!--        <module>ms-example</module>-->
+		<!--        <module>ms-graphql</module>-->
+	</modules>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
